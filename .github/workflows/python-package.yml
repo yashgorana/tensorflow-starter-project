@@ -36,5 +36,4 @@ jobs:
         poetry run flake8 . --count --show-source --statistics
     - name: Test Run
       run: |
-        poetry shell
         poetry run python -m src.app
