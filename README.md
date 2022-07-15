@@ -21,5 +21,26 @@ Poetry uses the following files:
 * `poetry.toml` contains the Poetry configuration. By default the project has configured the virtual environment to be setup inside this project itself.
 * `poetry.lock` file that contains the file signatures for packages and ensures that dependency tree is frozen, identical for all installs and hence reproducable.
 
-It will also generate a `poetry.lock` file that contains the file signatures.
+## Provisions for Visual Studio Code
 
+The project includes a `.vscode` directory that will configure your VS Code workspace to support Python development.
+
+### Workspace Settings (settings.json)
+
+For now, the workspace is configured to format code using `black`
+
+### Debug Settings (launch.json)
+
+A debug launch configuration has been provided that will debug the open file. To avoid any `sys.path` hacks for sibling imports, it by default injects current working directory as `PYTHONPATH`.
+
+### Extensions (extensions.json)
+
+The following extensions will be recommended by VS Code
+
+* Python
+* Pylance (Python language servers)
+* Jupyter & Jupyter Renderers
+
+## License
+
+The source code for the site is licensed under the MIT license, which you can find in the [LICENSE](./LICENSE) file.
