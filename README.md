@@ -1,6 +1,6 @@
 # Tensorflow (2.9) starter project
 
-A Data Science starter project with Tensorflow 2.9 on Python 3.10+.
+A Data Science starter project with Tensorflow 2.9 on Python 3.8+.
 
 ## Setup
 
@@ -20,6 +20,9 @@ Poetry uses the following files:
 * `pyproject.toml` contains all dependencies
 * `poetry.toml` contains the Poetry configuration. By default the project has configured the virtual environment to be setup inside this project itself.
 * `poetry.lock` file that contains the file signatures for packages and ensures that dependency tree is frozen, identical for all installs and hence reproducable.
+
+## Project Structure
+
 
 ## Provisions for Visual Studio Code
 

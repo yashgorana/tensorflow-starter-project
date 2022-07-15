@@ -1,18 +1,18 @@
 [tool.poetry]
 name = "tensorflow-starter-project"
 version = "1.0.0"
-description = "A Data Science starter project with Tensorflow 2.9 on Python 3.10+."
+description = "A Data Science starter project with Tensorflow 2.9 on Python 3.8+."
 authors = ["Yash Gorana <yash.gorana@hotmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.10, <3.11"
+python = ">=3.8,<3.11"
+ipykernel = "6.15.1"
 matplotlib = "3.5.2"
 numpy = "1.23.1"
 pandas = "1.4.3"
 scikit-learn = "1.1.1"
 seaborn = "0.11.2"
 tensorflow = "2.9.1"
-ipykernel = "6.15.1"
 
 [tool.poetry.dev-dependencies]
 black = {extras = ["jupyter"], version = "22.6.0"}
